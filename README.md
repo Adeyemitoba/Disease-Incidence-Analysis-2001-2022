@@ -64,10 +64,4 @@ Data analysis and visualization were conducted using:
 
 ---
 
-## Setup Instructions
 
-To run this project on JupyterLab, follow these steps:
-
-1. **Install JupyterLab** if not already installed:
-   ```bash
-   pip install jupyterlab
