@@ -107,6 +107,9 @@ The project highlights disease incidence trends, identifying significant hotspot
 ### Recommendations
 
 Public health officials should focus on identified hotspots and consider gender-based interventions. Further research could use machine learning models to predict future outbreaks.
+## Interactive Dashboard
+You can view the interactive dashboard on [Tableau Public](https://public.tableau.com/views/your-dashboard-link).
+![Dashboard Overview](./image-filename.png)
 
 ---
 
