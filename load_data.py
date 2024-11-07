@@ -75,3 +75,15 @@ if 'Lower_95_CI' in data.columns:
     data['Lower_95_CI'] = data['Lower_95_CI'].fillna(0)
 else:
     print("Column 'Lower_95_CI' not found in the dataset.")
+import pandas as pd
+
+# Load the CSV file
+file_path = 'C:\\Users\\snarc\\Documents\\Disease-Incidence-Analysis-2001-2022\\Infectious Diseases by disease, county, year and sex.csv'
+data = pd.read_csv(file_path)
+
+# Get the number of attributes (columns) and records (rows)
+num_attributes = data.shape[1]
+num_records = data.shape[0]
+
+print("Number of attributes (columns):", num_attributes)
+print("Number of records (rows):", num_records)
