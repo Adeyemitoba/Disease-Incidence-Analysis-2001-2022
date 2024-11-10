@@ -6,7 +6,7 @@
 
 ## Abstract
 
-This project analyzes disease incidence and population impacts across California counties from 2001 to 2022. Using data from the California Department of Public Health, it highlights disease trends, gender disparities, and geographical hotspots. The study leverages Tableau and Microsoft Excel for data visualization, offering insights into public health challenges and resource allocation.
+This project examines disease incidence trends across California counties from 2001 to 2022, focusing on gender disparities and geographical hotspots. Using data from the California Department of Public Health, it highlights patterns in infectious diseases, analyzes the impact on different population groups, and provides actionable insights for public health interventions. Tableau and Microsoft Excel are utilized for data visualization, emphasizing significant trends and disparities.
 
 ## Keywords
 
@@ -24,7 +24,7 @@ This project analyzes disease incidence and population impacts across California
 4. [Methodology](#methodology)
     - [Data Source](#data-source)
     - [Data Preparation](#data-preparation)
-    - [Analytical Tools](#analytical-tools)
+    - [Data Attributes](#data-attributes)
 5. [Data Analysis](#data-analysis)
 6. [Discussion](#discussion)
 7. [Conclusion](#conclusion)
@@ -36,15 +36,15 @@ This project analyzes disease incidence and population impacts across California
 
 ## Introduction
 
-Public health and epidemiology are crucial for understanding disease spread and its impact on populations. This project analyzes disease incidence and population impacts in California from 2001 to 2022, focusing on trends, gender disparities, and geographical hotspots.
+Public health and epidemiology play key roles in understanding disease spread and its impact on populations. This project analyzes disease incidence in California, focusing on trends, disparities, and geographical hotspots from 2001 to 2022.
 
 ## Problem Statement
 
-This analysis explores disease incidence trends, disparities, and geographical hotspots across California counties from 2001 to 2022. The study considers seasonal peaks, sexually transmitted diseases, and gender disparities, noting higher vector-borne disease rates in males.
+This analysis investigates trends in disease incidence, gender disparities, and geographical hotspots across California counties. The focus is on understanding how infectious disease patterns have varied over time and identifying areas of concern.
 
 ## Objective
 
-The project aims to analyze trends in disease incidence, focusing on gender disparities and population impact. High-incidence areas like Inyo and Kern counties are contrasted with lower-incidence regions like San Francisco and Sacramento.
+The objective of this project is to analyze disease incidence trends, identify gender disparities, and highlight geographical hotspots. The analysis provides insights into counties with high incidence rates, such as Inyo and Kern, and areas with lower rates like San Francisco and Sacramento.
 
 ---
 
@@ -52,16 +52,18 @@ The project aims to analyze trends in disease incidence, focusing on gender disp
 
 ### Data Source
 
-The dataset, sourced from [data.gov](https://data.gov), includes 189,921 records on disease incidence by county, year, gender, and population in California between 2001 and 2022.
+The dataset is sourced from [data.gov](https://data.gov), covering disease incidence by county, year, gender, and population for California from 2001 to 2022. It contains 189,921 records and is supported by the California Department of Public Health.
 
 ### Data Preparation
 
-The dataset was cleaned for consistency, with missing values handled and confidence intervals added using the California Department of Public Health's methodology.
+The dataset was cleaned using Python in VSCode, handling missing values and ensuring consistency. Confidence intervals were calculated following public health standards to accurately represent trends.
 
-### Analytical Tools
+### Data Attributes
 
-- **Tableau:** For data visualization and trend analysis.
-- **Microsoft Excel:** For statistical organization and preliminary analysis.
+The dataset includes the following key attributes:
+- **Year:** Temporal reference for trend analysis.
+- **California:** Total disease cases statewide.
+- **Counties (Kern, Los Angeles, Orange, San Diego):** County-level disease cases for comparative analysis.
 
 ---
 
@@ -69,15 +71,15 @@ The dataset was cleaned for consistency, with missing values handled and confide
 
 ### Overview of Disease Incidence
 
-The analysis identified trends from 2001 to 2022, highlighting increases in diseases like Anaplasmosis in Alameda and seasonal Lyme disease variations.
+The analysis revealed trends in disease incidence from 2001 to 2022, with significant increases in certain diseases like Anaplasmosis in Alameda County and seasonal variations in Lyme disease.
 
 ### Trend Analysis
 
-Significant disease rate changes occurred in 2019 and 2020, possibly due to the COVID-19 pandemic's impact.
+Notable changes in disease rates were observed during 2019-2020, likely influenced by the COVID-19 pandemic.
 
 ### Population Impact
 
-While populous counties like Los Angeles had higher case numbers, less populated counties like Inyo had higher per capita rates, suggesting other contributing factors.
+High-population counties like Los Angeles showed large case numbers, while smaller counties like Inyo had higher per capita incidence rates, indicating additional contributing factors.
 
 ---
 
@@ -85,16 +87,16 @@ While populous counties like Los Angeles had higher case numbers, less populated
 
 ### Key Findings
 
-1. **Disease Trends:** Seasonal peaks for Lyme disease and other disease increases were observed. Gender disparities showed higher rates for vector-borne diseases in males and certain infections in females.
-2. **Geographical Hotspots:** Inyo and Kern counties were significant hotspots, while San Francisco and Sacramento showed lower incidence rates.
+1. **Disease Trends:** Seasonal peaks were observed for Lyme disease. Gender disparities showed higher rates for vector-borne diseases in males and higher rates for certain infections like Chlamydia in females.
+2. **Geographical Hotspots:** Inyo and Kern counties were identified as significant hotspots, while San Francisco and Sacramento had lower incidence rates.
 
 ### Implications for Public Health
 
-The findings suggest targeted resource allocation and gender-specific health strategies could enhance public health interventions.
+The findings suggest targeted health interventions could be more effective if focused on identified hotspots and tailored to address gender disparities.
 
 ### Limitations
 
-The analysis is limited to the dataset's diseases and counties in California. External factors like policy changes or healthcare access weren't considered, and no predictive models were used.
+The analysis is limited to the diseases included in the dataset and California counties only. External factors like policy changes or healthcare access were not considered, and no predictive modeling was performed.
 
 ---
 
@@ -102,11 +104,11 @@ The analysis is limited to the dataset's diseases and counties in California. Ex
 
 ### Summary of Findings
 
-The project highlights disease incidence trends, identifying hotspots and gender-based disparities. Population density influenced disease spread, but smaller counties often had higher per capita rates.
+The analysis identified major trends in disease incidence, highlighted geographical hotspots, and uncovered gender-based disparities. Population density played a role in disease spread, but some smaller counties showed high per capita rates.
 
 ### Recommendations
 
-Public health officials should focus on identified hotspots and consider gender-based interventions. Future research could incorporate machine learning for predictive analysis.
+Public health officials should focus on identified hotspots and consider gender-based interventions. Future research could integrate machine learning models for predictive analysis of disease outbreaks.
 
 ---
 
@@ -119,7 +121,8 @@ Public health officials should focus on identified hotspots and consider gender-
 
 ---
 
+## Setup Instructions
 
-
-
-
+1. **Install JupyterLab:**
+   ```bash
+   pip install jupyterlab
