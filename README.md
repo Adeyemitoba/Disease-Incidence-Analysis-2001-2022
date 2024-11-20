@@ -4,9 +4,13 @@
 **Institution:** Northwest Missouri State University, Maryville MO 64468, USA  
 **Email:** [S572876@nwmissouri.edu](mailto:S572876@nwmissouri.edu) | [adeyemioluwatoba25@gmail.com](mailto:adeyemioluwatoba25@gmail.com)
 
+---
+
 ## Abstract
 
-This project examines disease incidence trends across California counties from 2001 to 2022, focusing on gender disparities and geographical hotspots. Using data from the California Department of Public Health, it highlights patterns in infectious diseases, analyzes the impact on different population groups, and provides actionable insights for public health interventions. Tableau and Microsoft Excel are utilized for data visualization, emphasizing significant trends and disparities.
+This project analyzes disease incidence and population impacts across California counties from 2001 to 2022. Using data sourced from the California Department of Public Health, the study identifies trends in disease incidence, gender disparities, and geographical hotspots. Analytical tools like Tableau and Microsoft Excel were used to visualize key patterns, highlighting the need for targeted public health interventions.
+
+---
 
 ## Keywords
 
@@ -14,37 +18,41 @@ This project examines disease incidence trends across California counties from 2
 - Disease Incidence
 - Population Impact
 - Data Visualization
-- Impact Analysis
+- Public Health
+
+---
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Problem Statement](#problem-statement)
-3. [Objective](#objective)
-4. [Methodology](#methodology)
-    - [Data Source](#data-source)
-    - [Data Preparation](#data-preparation)
-    - [Data Attributes](#data-attributes)
-5. [Data Analysis](#data-analysis)
-6. [Discussion](#discussion)
-7. [Conclusion](#conclusion)
-8. [Project Resources](#project-resources)
-9. [Setup Instructions](#setup-instructions)
-10. [Data Analysis Workflow](#data-analysis-workflow)
+1. [Introduction](#introduction)  
+2. [Problem Statement](#problem-statement)  
+3. [Objective](#objective)  
+4. [Methodology](#methodology)  
+    - [Data Source](#data-source)  
+    - [Data Preparation](#data-preparation)  
+    - [Data Attributes](#data-attributes)  
+5. [Data Analysis](#data-analysis)  
+6. [Discussion](#discussion)  
+7. [Conclusion](#conclusion)  
+8. [References](#references)
 
 ---
 
 ## Introduction
 
-Public health and epidemiology play key roles in understanding disease spread and its impact on populations. This project analyzes disease incidence in California, focusing on trends, disparities, and geographical hotspots from 2001 to 2022.
+Public health and epidemiology are essential for understanding the spread and impact of diseases. This project focuses on analyzing disease incidence trends in California from 2001 to 2022. It highlights geographical disparities, gender differences, and seasonal peaks in disease cases, providing actionable insights for public health planning.
+
+---
 
 ## Problem Statement
 
-This analysis investigates trends in disease incidence, gender disparities, and geographical hotspots across California counties. The focus is on understanding how infectious disease patterns have varied over time and identifying areas of concern.
+The project examines disease incidence trends, exploring the relationship between population size and disease cases, identifying seasonal trends, and analyzing disparities in disease distribution across California counties.
+
+---
 
 ## Objective
 
-The objective of this project is to analyze disease incidence trends, identify gender disparities, and highlight geographical hotspots. The analysis provides insights into counties with high incidence rates, such as Inyo and Kern, and areas with lower rates like San Francisco and Sacramento.
+To analyze disease incidence trends in California counties, focusing on gender-based disparities, population impacts, and geographical hotspots. Counties like Inyo and Kern are studied for high incidence rates, while regions like San Francisco and Sacramento are examined for lower trends.
 
 ---
 
@@ -52,34 +60,43 @@ The objective of this project is to analyze disease incidence trends, identify g
 
 ### Data Source
 
-The dataset is sourced from [data.gov](https://data.gov), covering disease incidence by county, year, gender, and population for California from 2001 to 2022. It contains 189,921 records and is supported by the California Department of Public Health.
+The dataset was sourced from [data.gov](https://data.gov) and includes 189,921 records covering disease incidence by county, year, gender, and population. Key resources:
+- **[Data.gov Dataset](https://catalog.data.gov/dataset/infectious-diseases-by-disease-county-year-and-sex-6e856)**
+- **[GitHub Repository](https://github.com/Adeyemitoba/Disease-Incidence-Analysis-2001-2022)**
+- **[Overleaf Project](https://www.overleaf.com/project/6716bc6ade42a8c3ebd0e744)**
 
 ### Data Preparation
 
-The dataset was cleaned using Python in VSCode, handling missing values and ensuring consistency. Confidence intervals were calculated following public health standards to accurately represent trends.
-
-### Data Attributes
-
-The dataset includes the following key attributes:
-- **Year:** Temporal reference for trend analysis.
-- **California:** Total disease cases statewide.
-- **Counties (Kern, Los Angeles, Orange, San Diego):** County-level disease cases for comparative analysis.
+- **Cleaning:** Missing values were handled by replacing with zeroes in key columns like `Cases` and `Confidence Intervals`.  
+- **Attributes:**  
+  - **Year:** Temporal reference for trends.  
+  - **Counties (e.g., Kern, Los Angeles):** Disease incidence by location.  
+  - **California:** Total statewide disease cases.  
 
 ---
 
 ## Data Analysis
 
-### Overview of Disease Incidence
+### Overview
 
-The analysis revealed trends in disease incidence from 2001 to 2022, with significant increases in certain diseases like Anaplasmosis in Alameda County and seasonal variations in Lyme disease.
+- Trends from 2001–2022 revealed significant spikes and declines in disease incidence.
+- Seasonal variations observed in diseases like Lyme disease.
+- A notable rise in Anaplasmosis cases was recorded in Alameda County.
 
 ### Trend Analysis
 
-Notable changes in disease rates were observed during 2019-2020, likely influenced by the COVID-19 pandemic.
+- Major changes during 2019-2020 likely reflect the impact of the COVID-19 pandemic.
 
 ### Population Impact
 
-High-population counties like Los Angeles showed large case numbers, while smaller counties like Inyo had higher per capita incidence rates, indicating additional contributing factors.
+- Higher case counts in populous counties like Los Angeles.
+- Higher per capita rates in smaller counties like Inyo suggest non-population-related factors.
+
+### Visualizations
+
+- **Trend Line Chart:** Annual disease incidence across California (2001–2022).  
+- **Geographic Map:** County-level disparities, with Inyo County showing high incidence.  
+- **Stacked Column Chart:** Gender distribution of disease cases.  
 
 ---
 
@@ -87,16 +104,16 @@ High-population counties like Los Angeles showed large case numbers, while small
 
 ### Key Findings
 
-1. **Disease Trends:** Seasonal peaks were observed for Lyme disease. Gender disparities showed higher rates for vector-borne diseases in males and higher rates for certain infections like Chlamydia in females.
-2. **Geographical Hotspots:** Inyo and Kern counties were identified as significant hotspots, while San Francisco and Sacramento had lower incidence rates.
+1. **Disease Trends:** Seasonal increases in Lyme disease and gender disparities (e.g., higher rates of vector-borne diseases in males).  
+2. **Geographical Hotspots:** Counties like Inyo and Kern emerged as disease hotspots.
 
-### Implications for Public Health
+### Implications
 
-The findings suggest targeted health interventions could be more effective if focused on identified hotspots and tailored to address gender disparities.
+The findings underscore the importance of targeted interventions in high-incidence regions and addressing gender-based health disparities.
 
 ### Limitations
 
-The analysis is limited to the diseases included in the dataset and California counties only. External factors like policy changes or healthcare access were not considered, and no predictive modeling was performed.
+The analysis was limited to available datasets and counties within California. External factors like policy changes and healthcare access were not considered. Predictive models were not explored.
 
 ---
 
@@ -104,25 +121,22 @@ The analysis is limited to the diseases included in the dataset and California c
 
 ### Summary of Findings
 
-The analysis identified major trends in disease incidence, highlighted geographical hotspots, and uncovered gender-based disparities. Population density played a role in disease spread, but some smaller counties showed high per capita rates.
+The analysis highlights significant trends in disease incidence, identifies hotspots, and uncovers gender disparities. Population density was a major factor, but per capita rates in smaller counties revealed additional influences.
 
 ### Recommendations
 
-Public health officials should focus on identified hotspots and consider gender-based interventions. Future research could integrate machine learning models for predictive analysis of disease outbreaks.
+- Focus interventions in identified hotspots.  
+- Implement gender-specific public health strategies.  
+- Explore predictive models for future research to anticipate outbreaks.
 
 ---
 
-## Project Resources
+## References
 
-- [Data.gov Dataset](https://catalog.data.gov/dataset/infectious-diseases-by-disease-county-year-and-sex-6e856)
-- [GitHub Repository](https://github.com/Adeyemitoba/Disease-Incidence-Analysis-2001-2022)
-- [Overleaf Project](https://www.overleaf.com/project/6716bc6ade42a8c3ebd0e744)
-- Tableau Dashboard
+1. Ahrens, K. et al. (2007). *Trends in the use of sexually transmitted disease diagnostic technologies in California, 1996–2003*. Sexually Transmitted Diseases, 34(7), 513–518.  
+2. Newsom, G. (2024). *County health status profiles 2024*.  
+3. Salman, A. et al. (2024). *Trends in rheumatic heart disease-related mortality in the United States from 1999 to 2020*. Current Problems in Cardiology, 49(1), 102148.
 
 ---
 
-## Setup Instructions
 
-1. **Install JupyterLab:**
-   ```bash
-   pip install jupyterlab
