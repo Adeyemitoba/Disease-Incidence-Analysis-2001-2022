@@ -37,26 +37,27 @@ This project analyzes infectious disease trends in California counties from 2001
   - Explored gender disparities in disease incidence.
 
 ## Results
-### Visual Highlights
-1. **Yearly Disease Trend (2001–2022):**
-   ![Trend Line Chart](./images/yearly_trend.png)
-   *This chart illustrates yearly variations in disease incidence, highlighting significant fluctuations.*
+## Visualizations of Disease Trends
 
-2. **Top 10 Counties by Disease Incidence:**
-   ![Bar Chart](./images/top_counties.png)
-   *Bar chart showcasing counties with the highest disease incidence.*
+### 1. Population Size vs. Disease Incidence
+![Population vs Disease](./images/population_vs_disease.png)
+*This scatter plot shows the relationship between population size and disease incidence.*
 
-3. **Disease Forecasting:**
-   ![Forecast Chart](./images/disease_forecast.png)
-   *ARIMA-based forecast for Campylobacteriosis cases.*
+### 2. Forecast of Campylobacteriosis Cases
+![Forecast Cases](./images/forecast_cases.png)
+*Forecast of Campylobacteriosis cases including historical data and predictions.*
 
-4. **Geographical Distribution:**
-   ![Heatmap](./images/geospatial_analysis.png)
-   *Heatmap of disease incidence highlighting hotspots and areas with minimal impact.*
+### 3. Historical Trend of Campylobacteriosis Cases
+![Historical Trend](./images/historical_trend.png)
+*Line chart showing annual Campylobacteriosis cases from 2001 to 2022.*
 
-5. **Gender-Based Disparities:**
-   ![Stacked Column Chart](./images/gender_disparities.png)
-   *Visualization of gender disparities in disease incidence.*
+### 4. Geographical Hotspots of Disease Incidence
+![Geographical Hotspots](./images/tableau_map.png)
+*Map of California counties with the highest disease incidence.*
+
+### 5. Top 10 Counties by Disease Incidence
+![Top 10 Counties](./images/top_ten_county.png)
+*Bar chart displaying the top 10 counties with the highest disease incidence.*
 
 ### Key Deliverables
 - **Data Insights**: Detailed report highlighting disease patterns and their implications.
